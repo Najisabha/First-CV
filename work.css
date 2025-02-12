@@ -1,0 +1,148 @@
+* {
+  padding: 0;
+  margin: 0;
+  direction: rtl;
+  text-decoration: none;
+  list-style: none;
+  font-family: "IBM Plex Sans Arabic", sans-serif;
+  font-style: normal;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+}
+main section {
+  width: 100%;
+  margin: auto;
+  overflow: hidden;
+}
+#header {
+  background: #353637;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  border-bottom: 3px solid #23a0c2;
+  padding: 20px 120px 30px;
+}
+#header {
+  color: white;
+  font-size: 20px;
+  font-weight: 200;
+}
+#header span {
+  color: rgb(255, 255, 255);
+  font-weight: 400;
+  font-size: 36px;
+}
+nav ul {
+  display: flex;
+  gap: 15px;
+}
+nav ul li {
+  float: right;
+  margin-left: 15px;
+}
+nav ul li a {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 400;
+}
+#header .highlite,
+#header .amal a {
+  color: #23a0c2;
+}
+/**/
+.project {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(410px, 1fr));
+}
+.pro img {
+  background-color: #23a0c2;
+  background-size: cover;
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+  height: auto;
+  width: 400px;
+  justify-content: center;
+  align-items: center;
+}
+.pro {
+  margin-top: 30px;
+}
+@media (max-width: 840px) {
+  .pro img {
+    background-color: #23a0c2;
+    background-size: cover;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    height: auto;
+    width: 200px;
+  }
+
+  .project {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  }
+}
+@media (max-width: 666px) {
+  .pro img {
+    background-color: #23a0c2;
+    background-size: cover;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    height: auto;
+    width: 200px;
+  }
+
+  .project {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+
+  #header {
+    background: #353637;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    border-bottom: 3px solid #23a0c2;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media (max-width: 501px) {
+  .pro img {
+    background-color: #23a0c2;
+    background-size: cover;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    height: auto;
+    width: 350px;
+  }
+
+  .project {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+
+  #header {
+    background: #353637;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    border-bottom: 3px solid #23a0c2;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}

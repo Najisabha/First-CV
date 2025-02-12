@@ -1,0 +1,142 @@
+* {
+  padding: 0;
+  margin: 0;
+  direction: rtl;
+  text-decoration: none;
+  list-style: none;
+  font-family: "IBM Plex Sans Arabic", sans-serif;
+  font-style: normal;
+}
+main {
+  display: flex;
+  flex-wrap: wrap;
+}
+main section {
+  width: 100%;
+  margin: auto;
+  overflow: hidden;
+}
+#header {
+  background: #353637;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  border-bottom: 3px solid #23a0c2;
+  padding: 20px 120px 30px;
+}
+#header {
+  color: white;
+  font-size: 20px;
+  font-weight: 200;
+}
+#header span {
+  color: rgb(255, 255, 255);
+  font-weight: 400;
+  font-size: 36px;
+}
+nav ul {
+  display: flex;
+  gap: 15px;
+}
+nav ul li {
+  float: right;
+  margin-left: 15px;
+}
+nav ul li a {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 400;
+}
+#header .highlite,
+#header .current a {
+  color: #23a0c2;
+}
+/*showcase*/
+#showcase {
+  min-height: 400px;
+  background: url("../2.jpg") no-repeat center;
+  background-image: linear-gradient(
+    to top,
+    rgba(255, 255, 255, 0.666),
+    hsla(0, 0%, 0%, 0.753)
+  );
+  background-size: cover;
+  color: #fff;
+  text-align: center;
+}
+#showcase h1 {
+  margin-top: 100px;
+  font-size: 36px;
+  margin-bottom: 15px;
+  color: rgba(37, 37, 37, 0.856);
+}
+#showcase p {
+  font-size: 20px;
+  color: black;
+}
+/**/
+#boxes {
+  margin-top: 20px;
+  padding: 60px 120px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: row wrap;
+  align-items: center;
+}
+.box {
+  text-align: center;
+  margin-left: 10px;
+}
+#footer {
+  padding: 20px;
+  margin-top: 20px;
+  background-color: #23a0c2;
+  color: #fff;
+  text-align: center;
+}
+@media (max-width: 1020px) {
+  #boxes {
+    flex-direction: column;
+  }
+  .box {
+    margin-top: 50px;
+  }
+  #footer {
+    padding: 20px;
+    margin-top: 20px;
+    background-color: #23a0c2;
+    color: #fff;
+    text-align: center;
+  }
+}
+
+@media (max-width: 666px) {
+  #header {
+    background: #353637;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    border-bottom: 3px solid #23a0c2;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media (max-width: 501px) {
+  #header {
+    background: #353637;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    border-bottom: 3px solid #23a0c2;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
